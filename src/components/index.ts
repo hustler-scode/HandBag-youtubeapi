@@ -20,3 +20,6 @@ export { default as SidebarMenu } from "./SidebarMenu";
 export { default as Dropdown } from "./Dropdown";
 export { default as ScrollToTop } from "./ScrollToTop";
 export { default as ShowingSearchPagination } from "./ShowingSearchPagination";
+export { default as HomepageVideoSection } from "./HomepageVideoSection";
+export { default as LatestVideosSection } from "./LatestVideosSection";
+export { default as ProductVideoShowcase } from "./ProductVideoShowcase";

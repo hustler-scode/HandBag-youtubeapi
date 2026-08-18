@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import {
+  AdminDashboard,
   Cart,
   Checkout,
   HomeLayout,
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
         path: "order-history/:id",
         element: <SingleOrderHistory />,
         loader: singleOrderLoader
+      },
+      {
+        path: "admin",
+        element: <AdminDashboard />,
       },
     ],
   },

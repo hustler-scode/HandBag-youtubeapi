@@ -1,90 +1,68 @@
-<h1>Fashion eCommerce Shop in React.js, TypeScript and JSON server</h1>
+# Fashion eCommerce Shop
 
-<p>Fashion eCommerce template is a custom <b>fashion theme</b> completely designed and created from the ground up. The theme is designed in Figma by following foundational web design practices. <b>The fashion website template</b> was created using React.js best practices and techniques. The fashion website template is mainly a luxury fashion template for women, but it can also be used for men and kids. The fashion website template can also be used for any React eCommerce template or clothing eCommerce website. You can download it for free and test it yourself.</p>
-<p>The following technologies were used in design and development:</p>
-<ul>
-  <li><p>Figma - The leading collaborative design tool for building meaningful products.</p></li>
-  <li><p>React.js - Free and open-source front-end JavaScript library for building user interfaces based on components by Facebook Inc.</p></li>
-  <li><p>TypeScript - Free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript.</p></li>
-  <li><p>JSON server - A lightweight and easy-to-use Node.js tool that simulates a RESTful API using a JSON file as the data source</p></li>
-  <li><p>Redux Toolkit - The official, opinionated, batteries-included toolset for efficient Redux development</p></li>
-  <li><p>Axios - Promise-based HTTP client for the browser and Node.js.</p></li>
-  <li><p>React Router - A popular library for routing in React applications</p></li>
-  <li><p>TailwindCSS - Utility-first CSS framework for rapidly building modern websites without ever leaving your HTML</p></li>
-  <li><p>React hot toast - Beautiful notifications for React applications</p></li>
-  <li><p>Concurrently - Package that allows you to run multiple scripts at the same time</p></li>
-</ul>
+A modern, fully responsive fashion eCommerce storefront designed with a premium user experience in mind. This project provides a complete template for an online clothing store, featuring product browsing, individual product details, cart management, and user authentication flows.
 
+## System Architecture & Stack
 
-<h2>Instructions - The Fashion Website Template</h2>
-<ol>
-  <li><p>To run the app you first need to download and install Node.js and npm on your computer. Here is a link to the tutorial that explains how to install them: <a href="https://www.youtube.com/watch?v=4FAtFwKVhn0" target="_blank">https://www.youtube.com/watch?v=4FAtFwKVhn0</a>. Also here is the link where you can download them: <a href="https://nodejs.org/en" target="_blank">https://nodejs.org/en</a></p></li>
-  <li><p>When you install all the programs you need on your computer you need to download the project. When you download the project, you need to extract it.</p></li>
-  <li><p>After you extract the project, you need to open the project folder in the command prompt or any terminal of choice. After it write the following command:</p></li>
-</ol>
+This application is built with a modern frontend stack focused on performance, type safety, and developer experience.
 
-```
-npm install
-```
+### Core Technologies
 
-<p>4. After everything is installed you need to write the following command:</p>
+* **[React 18](https://reactjs.org/)**: The core UI library, utilizing modern React hooks and functional components.
+* **[Vite](https://vitejs.dev/)**: Next-generation frontend tooling providing lightning-fast Hot Module Replacement (HMR) and optimized production builds.
+* **[TypeScript](https://www.typescriptlang.org/)**: Ensures robust, type-safe code, reducing runtime errors and improving developer productivity.
 
-```
-npm start
-```
+### State Management & Data Fetching
 
-<h2>Project screenshots: </h2>
+* **[Redux Toolkit](https://redux-toolkit.js.org/)**: Manages complex global application state (like the shopping cart and user session) with a simplified, opinionated approach.
+* **[React-Redux](https://react-redux.js.org/)**: Official React bindings for Redux.
+* **[Axios](https://axios-http.com/)**: Promise-based HTTP client for making API requests to the backend.
 
-<h3>Landing page</h3>
+### Routing & Navigation
 
+* **[React Router DOM v6](https://reactrouter.com/)**: Handles declarative, client-side routing, enabling seamless navigation between pages without full page reloads.
 
-![landing page](https://github.com/user-attachments/assets/9e1ef65f-ca21-4615-9820-f8f00204ad85)
+### Styling & UI Components
 
+* **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework for rapid UI development and consistent design tokens.
+* **[Headless UI](https://headlessui.com/)**: Completely unstyled, fully accessible UI components (used for complex interactive elements like dropdowns and modals).
+* **[React Icons](https://react-icons.github.io/react-icons/)**: Scalable vector icons for clean visual indicators.
+* **[React Hot Toast](https://react-hot-toast.com/)**: Provides lightweight, customizable notifications for user actions (e.g., "Added to cart").
 
-<h3>Shop page</h3>
+### Backend & API Simulation
 
+* **[JSON Server](https://github.com/typicode/json-server)**: Simulates a full REST API utilizing a simple JSON file, allowing for frontend development independent of a production backend.
+* **[Concurrently](https://github.com/open-cli-tools/concurrently)**: A development utility to run both the Vite frontend server and the JSON backend server simultaneously with a single command.
 
-![shop page](https://github.com/user-attachments/assets/e2935c47-9b53-4d26-9221-05451102260c)
+## Getting Started
 
+### Prerequisites
+* [Node.js](https://nodejs.org/) installed on your machine.
 
-<h3>Single product page</h3>
+### Installation
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hustler-scode/HandBag-youtubeapi.git
+   cd HandBag-youtubeapi
+   ```
 
-![single product page](https://github.com/user-attachments/assets/815eaa98-150d-4847-9339-5140745c66ba)
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
+3. Start the development servers (runs both the React frontend and JSON server backend):
+   ```bash
+   npm start
+   ```
 
-<h3>Cart page</h3>
+The application will typically be available at `http://localhost:5173/`, and the mock API at `http://localhost:3000/`.
 
-![cart page](https://github.com/user-attachments/assets/164bcf3d-7984-4cc4-8f30-978069737ef6)
+## Key Features
 
-<h3>Login page</h3>
-
-![login page](https://github.com/user-attachments/assets/4903e803-9253-4212-be4d-cfa14e010fb3)
-
-
-<h3>Register page</h3>
-
-![register page](https://github.com/user-attachments/assets/a2c5f5cb-d03f-46c8-b43a-edd3876e3001)
-
-<h3>User profile page</h3>
-
-![user profile page](https://github.com/user-attachments/assets/5786d46b-29a8-44c2-ad52-3a794ce954c9)
-
-
-<h3>Order history page</h3>
-
-![order history page](https://github.com/user-attachments/assets/57259617-6c4e-4efd-84ad-961ee0a9b9e4)
-
-
-<h3>Single order history page</h3>
-
-![single order history page](https://github.com/user-attachments/assets/f2abffa8-9af3-478f-a888-ed3fbd007315)
-
-<h3>Checkout page</h3>
-
-![checkout page](https://github.com/user-attachments/assets/0dc47027-1bf7-4b96-bff2-73867d6892a9)
-
-
-<h3>Search page</h3>
-
-![search page](https://github.com/user-attachments/assets/a62c71be-5424-4bf5-a660-352d507764a5)
+* **Responsive Design**: Flawless experience across mobile, tablet, and desktop viewports.
+* **Product Catalog**: Browse and filter fashion items.
+* **Shopping Cart**: Add, remove, and update item quantities in a global cart.
+* **Authentication UI**: Pre-built mock flows for Login and Registration.
+* **User Profiles & Order History**: Dedicated views for user account management.

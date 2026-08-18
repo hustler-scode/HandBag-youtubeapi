@@ -20,22 +20,32 @@ const Login = () => {
     
     // Check if user with the email and password exists
     const users = await customFetch.get("/users");
-    let userId: number = 0; // Initialize userId with a default value
-    const userExists = users.data.some(
-      (user: { id: number; email: string; password: string }) => {
-        if (user.email === data.email) {
-          userId = user.id;
+    let matchedUser: { id: number; email: string; password: string; role?: string } | null = null;
+    users.data.some(
+      (user: { id: number; email: string; password: string; role?: string }) => {
+        if (user.email === data.email && user.password === data.password) {
+          matchedUser = user;
+          return true;
         }
-        return user.email === data.email && user.password === data.password;
+        return false;
       }
     );
     
     // if user exists, show success message
-    if (userExists) {
+    if (matchedUser) {
+      const user = matchedUser as { id: number; email: string; password: string; role?: string };
       toast.success("You logged in successfully");
-      localStorage.setItem("user", JSON.stringify({...data, id: userId}));
+      localStorage.setItem("user", JSON.stringify({
+        email: user.email,
+        id: user.id,
+        role: user.role || "user",
+      }));
       store.dispatch(setLoginStatus(true));
-      navigate("/user-profile");
+      if (user.role === "admin") {
+        navigate("/admin");
+      } else {
+        navigate("/user-profile");
+      }
       return;
     } else {
       toast.error("Please enter correct email and password");

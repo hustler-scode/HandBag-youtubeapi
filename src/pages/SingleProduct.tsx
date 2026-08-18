@@ -4,6 +4,7 @@ import {
   ProductItem,
   QuantityInput,
   StandardSelectInput,
+  ProductVideoShowcase,
 } from "../components";
 import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
@@ -153,6 +154,11 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
+
+      {/* product video showcase */}
+      {singleProduct && (
+        <ProductVideoShowcase productId={singleProduct.id} productName={singleProduct.title} />
+      )}
 
       {/* similar products */}
       <div>
